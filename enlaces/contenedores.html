@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MKLibrary/scss/reset.css">
+    <link rel="stylesheet" href="/MKLibrary/scss/style.css">
+    <link rel="shortcut icon" href="/MKLibrary/img/icon.ico">
+
+    <title>MK LIBRARY</title>
+    <title>Documentación MKLibrary</title>
+</head>
+<body class="ttxt-Arial">
+    <header class="fondo-menu fj">
+        <div class="navbar ">
+            <img   class="ig p-3" src="/img/1.png"   alt="MK LIBRARY" >
+            <ul>
+                <li class="etiqueta rde-s"><a class="t-none"  href="index.html">INICIO</a></li>
+                <li class="etiqueta rde-s"><a class="t-none" href="https://github.com/Isaac684/MKLibrary/graphs/contributors">CONTACTOS</a></li>
+                <li class="etiqueta rde-s"> <a class="t-none" href="https://github.com/Isaac684/MKLibrary">ACERCA DE</a></li>
+                <li class="etiqueta rde-s"> <a class="t-none" href="#">REDES SOCIALES</a></li>
+            </ul>
+            </div> 
+    </header>
+     
+
+    <div class="link barra-vertical mar-1 fj rde-s">
+        <h1 class="sf-3 gf p-3">CREAR COMPONENTES</h1>
+        <a class="link-s sf-2" href="/enlaces/botones.html">Botones</a>
+        <a class="link-s sf-2" href="/enlaces/formularios.html">Formularios</a>
+        <a class="link-s sf-2" href="/enlaces/tarjetas.html">Tarjetas</a>
+        <a class="link-s sf-2" href="/enlaces/alertar.html">Alertas</a>
+        <a class="link-s sf-2" href="/enlaces/menus.html">Barras de Navegacion</a>
+        <a class="link-s sf-2" href="/enlaces/badges.html">Badges</a>
+        <a class="link-s sf-2" href="/enlaces/contenedores.html">Containers</a>
+
+        <h1 class="sf-3 gf p-3">CLASES UTILITARIAS</h1>
+
+        <a class="link-s sf-2" href="/enlaces/fuente.html">Modificar tamaño,grosor</a>
+        <a class="link-s sf-2" href="/enlaces/sombras.html">Crear Sombras</a>
+        <a class="link-s sf-2" href="/enlaces/bordes.html">Crear Margenes,padding</a>
+        <a class="link-s sf-2" href="/enlaces/moverElementos.html">Mover elementos</a>
+        <a class="link-s sf-2" href="/enlaces/redondeo.html">Redondear elementos</a>
+        <a class="link-s sf-2" href="/enlaces/ocultar.html">Ocultar Elementos</a>
+        <a class="link-s sf-2" href="/enlaces/colores.html">Colores de fondo</a>
+    </div>
+    <div style=" margin-left: 19.7%; padding-top: 11vh; height: 100%; " class="cf-r5 p-5 par-5">
+        <h1 class="gf sf-5">Contenedores</h1>
+        <p class="mar-5 sf-3">Los contenedores estan divididos en 3 tipos <span class="gf">contenedores, contenedores-(pq,md, gn, xgn y xxgn) y contenedor-100.</p>
+
+        <h2 class="gf sf-3 mar-5">Contenedor</h2>
+        <p class="mar-5 sf-2">Este contenedor pemite irse adaptando en cada uno de los "breakpoints", que es nada mas y nada menos, las resoluciones predefinidas que son:</p>
+        <p class="mar-5 sf-2"><span class="color-font-peligro">pq</span>: Tamaño <= 540px</p>
+        <p class="mar-5 sf-2"><span class="color-font-peligro">md</span>: Tamaño <= 720px</p>
+        <p class="mar-5 sf-2"><span class="color-font-peligro">gn</span>: Tamaño <= 960px</p>
+        <p class="mar-5 sf-2"><span class="color-font-peligro">xgn</span>: Tamaño <= 1200px</p>
+        <p class="mar-5 sf-2"><span class="color-font-peligro">xxg</span>: Tamaño <= 1400px</p>
+        <p class="mar-5 sf-2">Al alcanzar uno de estos puntos de quiebre el contenedor se adapta 250px menos que su tamaño actual esto para que no se desborde, pero al llegar a 540px su tamaño sera del 100% del espacio disponible en el contenedor padre. Se declara en la clase como "contenedor."</p>
+
+        <h2 class="gf sf-3 mar-5">Contenedores-(pq, md, gn, xgn y xxgn)</h2>
+        <p class="mar-5 sf-2">Estos contenedores se comportan de la siguiente manera, cuando son mayores que su resolucion minima se adapta 250px menos que sus breakpoints, pero al llegar a su propio breakpoints, toma un valor de 100% en la pantalla de espacio disponible</p>
+        
+        <p class="mar-5 sf-2">Este contenedor s e declara asi: <span class="gf">contenedor-pq</span> Esto se declara en el nombre de la clase y genera un contenedor pequeño </p>
+
+        <h2 class="gf sf-3 mar-5">Contenedor-100</h2>
+        <p class="mar-5 sf-2">Estos contenedor tiene la siguiente finalidad, es la de que al ser declarado <span class="gf">contenedor-100</span> en la clase tomara el 100% del total espacio disponible en el contenedor padre donde esta ubicado. Este contenedor es util sobre todo cuando se desea color en un body asi como en algun contenedor como un section o un aside ya que no tendremos que darle dimensiones se adaptara responsivamente. Cada contenedor a sido pensado en que el usuario le saque el maximo provecho esperamos sea de mucha ayuda para ti gracias!!</p>
+        
+    </div>
+</body>
+</html>

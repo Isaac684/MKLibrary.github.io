@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MKLibrary/scss/reset.css">
+    <link rel="stylesheet" href="/MKLibrary/scss/style.css">
+    <link rel="shortcut icon" href="/MKLibrary/img/icon.ico">
+
+    <title>Crear margenes, padding y bordes</title>
+</head>
+<body class="ttxt-Arial">
+    <header class="fondo-menu fj">
+        <div class="navbar ">
+            <img   class="ig p-3" src="/img/1.png"   alt="MK LIBRARY" >
+            <ul>
+                <li class="etiqueta rde-s"><a class="t-none"  href="index.html">INICIO</a></li>
+                <li class="etiqueta rde-s"><a class="t-none" href="https://github.com/Isaac684/MKLibrary/graphs/contributors">CONTACTOS</a></li>
+                <li class="etiqueta rde-s"> <a class="t-none" href="https://github.com/Isaac684/MKLibrary">ACERCA DE</a></li>
+                <li class="etiqueta rde-s"> <a class="t-none" href="#">REDES SOCIALES</a></li>
+            </ul>
+            </div> 
+    </header>
+     
+
+    <div class="link barra-vertical mar-1 fj rde-s">
+        <h1 class="sf-3 gf p-3">CREAR COMPONENTES</h1>
+        <a class="link-s sf-2" href="/enlaces/botones.html">Botones</a>
+        <a class="link-s sf-2" href="/enlaces/formularios.html">Formularios</a>
+        <a class="link-s sf-2" href="/enlaces/tarjetas.html">Tarjetas</a>
+        <a class="link-s sf-2" href="/enlaces/alertar.html">Alertas</a>
+        <a class="link-s sf-2" href="/enlaces/menus.html">Barras de Navegacion</a>
+        <a class="link-s sf-2" href="/enlaces/badges.html">Badges</a>
+        <a class="link-s sf-2" href="/enlaces/contenedores.html">Containers</a>
+
+        <h1 class="sf-3 gf p-3">CLASES UTILITARIAS</h1>
+
+        <a class="link-s sf-2" href="/enlaces/fuente.html">Modificar tamaño,grosor</a>
+        <a class="link-s sf-2" href="/enlaces/sombras.html">Crear Sombras</a>
+        <a class="link-s sf-2" href="/enlaces/bordes.html">Crear Margenes,padding</a>
+        <a class="link-s sf-2" href="/enlaces/moverElementos.html">Mover elementos</a>
+        <a class="link-s sf-2" href="/enlaces/redondeo.html">Redondear elementos</a>
+        <a class="link-s sf-2" href="/enlaces/ocultar.html">Ocultar Elementos</a>
+        <a class="link-s sf-2" href="/enlaces/colores.html">Colores de fondo</a>
+    </div>
+
+    <div style="margin-left: 19.7%; padding-top: 11vh; height: 100%;" class="cf-r5 p-5 par-5">
+            <h1 class="gf sf-5">Margenes</h1>
+            <p class="mar-5 sf-3">Los margenes en esta libreria estan divididos en dos tipos <span class="gf">margin general y margin especifico.</span> <span>Cada uno con un prefijo como m-1, mar-1 etc. Donde la m representa el tipo de margen, o los tipos de margen, ejemplo si coloca m-1, se esta diciendo que quiere un margen a los 4 lados o lo que se conoce como un margen general, y el -1 (Guion y un numero, que este va desde 1 hasta el 5) representa el tamaño en pixeles que desea siendo 1, el mas pequeño, igual a 13px, hasta 5 siendo este de 16px el mas grande.</span></p>
+
+            <h2 class="gf sf-3 mar-5">Margen general</h2>
+            <p class="mar-5 sf-2">Los margenes generales se declaran en las clases de la siguiente manera:</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">m-1</span>: Donde se genera un margin general (top, buttom, left y right) de tamaño 3px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">m-2</span>: Donde se genera un margin general (top, buttom, left y right) de tamaño 7px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">m-3</span>: Donde se genera un margin general (top, buttom, left y right) de tamaño 10px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">m-4</span>: Donde se genera un margin general (top, buttom, left y right) de tamaño 13px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">m-5</span>: Donde se genera un margin general (top, buttom, left y right) de tamaño 16px</p>
+
+            <h2 class="gf sf-3 mar-5">Margen especifico</h2>
+            <p class="mar-5 sf-2">Los margenes especificos cuentan con el mismo tamaño que los bordes generales, con la unica variacion que se debe especificar el sufijo mar, mde, mab y miz que significan:</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">mar</span>: Donde se genera un margin top</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">mde</span>: Donde se genera un margin right</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">mab</span>: Donde se genera un margin buttom</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">miz</span>: Donde se genera un margin left</p>
+            <p class="mar-5 sf-2">Un ejemplo de aplicacion seria mar-5 donde le digo que tenga un margen arriba del tipo 5 (16 pixeles)</p>
+            
+
+            <h1 class="gf sf-5 par-5 mar-5">Paddings</h1>
+            <p class="mar-5 sf-3">Los paddings en esta libreria al igual que los margenes se dividen en:<span class="gf"> padding general y padding especifico.</span> <span>Los cuales se identifican con la letra p (para el padding general) acompañado de un guion y un numero (p-1, como ejemplo) que va desde 1 hasta el 5 que representa el tamaño.</span></p>
+
+            <h2 class="gf sf-3 mar-5">Padding general</h2>
+            <p class="mar-5 sf-2">Los paddings generales se declaran en las clases de la siguiente manera:</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">p-1</span>: Donde se genera un padding general (top, buttom, left y right) de tamaño 3px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">p-2</span>: Donde se genera un padding general (top, buttom, left y right) de tamaño 7px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">p-3</span>: Donde se genera un padding general (top, buttom, left y right) de tamaño 10px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">p-4</span>: Donde se genera un padding general (top, buttom, left y right) de tamaño 13px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">p-5</span>: Donde se genera un padding general (top, buttom, left y right) de tamaño 16px</p>
+
+            <h2 class="gf sf-3 mar-5">Padding especifico</h2>
+            <p class="mar-5 sf-2">Los padding especificos cuentan con el mismo tamaño que los generales, solo se debe especificar el sufijo par, pde, pab y piz que significan:</p>
+            <p class="mar-5 sf-2"-><span class="color-font-peligro">par</span>: Donde se genera un padding top</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">pde</span>: Donde se genera un padding right</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">pab</span>: Donde se genera un padding buttom</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">piz</span>: Donde se genera un padding left</p>
+       
+
+            <h1 class="gf sf-5 par-5 mar-5">Bordes</h1>
+            <p class="mar-5 sf-3">Los bordes en esta libreria cuentan con tres propiedades <span class="gf"> tipo de borde-color-tamaño.</span> <span>Los bordes tienen al igual que los padding uno general, especificando solo b y otro especifico, como por ejemplo un borde arriba o top seria bar, seguido de un valor del 1-5 como se ha especificado anteriormente.</span></p>
+
+            <h2 class="gf sf-3 mar-5">Borde color solido general</h2>
+            <p class="mar-5 sf-2">Los bordes de color solido se declaran en las clases de la siguiente manera:</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">b-primary-1</span>: Donde se genera un borde de color primario de tamaño 3px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">b-secundario-1</span>: Donde se genera un borde de color secundario de tamaño 3px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">b-oscuro-1</span>: Donde se genera un borde de color oscuro de tamaño 3px</p>
+
+            <h2 class="gf sf-3 mar-5">Borde color solido especifico</h2>
+            <p class="mar-5 sf-2">Los bordes de color solido cuentan con el mismo tamaño que los colores solidos generales, solo se debe especificar el sufijo bar, bde, bab y biz que significan:</p>
+            <p class="mar-5 sf-2"-><span class="color-font-peligro">bar</span>: Donde se genera un borde top</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">bde</span>: Donde se genera un borde right</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">bab</span>: Donde se genera un borde buttom</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">biz</span>: Donde se genera un borde left</p>
+
+            <h2 class="gf sf-3 mar-5">Borde color RGB general</h2>
+            <p class="mar-5 sf-2">Los bordes de color RGB se declaran en las clases de la siguiente manera:</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">b-r1-1</span>: Donde se genera un borde de color RGB de tipo 1, de tamaño 3px</p>
+            <p class="mar-5 sf-2"><span class="color-font-peligro">b-r2-1</span>: Donde se genera un borde de color RGB de tipo 2, de tamaño 3px</p>
+            <p class="sf-2 mar-5"> 
+                <span class="gf mar-5">Nota: </span> <span>Existen 5 tipos de colores RGB y todos se declaro con r de RGB y guion numero, que va del 1 al 5</span>
+            </p> 
+
+            <h2 class="gf sf-3 mar-5">Borde color RGB especifico</h2>
+            <p class="mar-5 sf-2">Los bordes de color RGB cuentan con el mismo tamaño que los colores solidos generales, solo se debe especificar el sufijo bar, bde, bab y biz ejemplo:</p>
+            <p class="mar-5 sf-2"-><span class="color-font-peligro">bar-r1-1</span>: Donde se genera un borde top de color RGB de tamaño 1 (3px)</p>
+        </div>
+</body>
+</html>
