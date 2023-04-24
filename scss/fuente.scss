@@ -1,0 +1,72 @@
+@use 'colores' as *;
+$size-1: 1vh;
+$size-2: 2.3vh;
+$size-3: 3vh;
+$size-4: 4vh;
+$size-5: 5vh;
+
+//sf = Tamaño de la fuente
+@mixin sizefont($nombre,$size){
+    .sf-#{$nombre}{
+        font-size: $size;
+    }
+}
+@include sizefont('1',$size-1);
+@include sizefont('2',$size-2);
+@include sizefont('3',$size-3);
+@include sizefont('4',$size-4);
+@include sizefont('5',$size-5);
+//gf = Grosor de la fuente
+.gf{
+    font-weight: bold;
+}
+@mixin colorfuente($nombre, $color){
+    .color-font-#{$nombre}{
+        color:$color;
+    }
+}
+@include colorfuente('primario',$primario);
+@include colorfuente('secundario',$secundario);
+@include colorfuente('terceario',$terciario);
+@include colorfuente('exito',$exito);
+@include colorfuente('peligro',$peligro);
+@include colorfuente('advertencia',$advertencia);
+@include colorfuente('informacion',$informacion);
+@include colorfuente('claro',$claro);
+@include colorfuente('oscuro',$oscuro);
+
+
+//ttxt = Tipo de texto o funte 
+.ttxt-Arial{
+    font-family: Arial;
+}
+.ttxt-Calibri{
+    font-family: Calibri;
+}
+.ttxt-GillSans{
+    font-family: 'Gill Sans';
+}
+.ttxt-Verdana{
+    font-family: Verdana;
+}
+.ttxt-Times{
+    font-family:Times;
+}
+.ta-center{
+    text-align: center;
+}
+.ta-justify{
+    text-align: justify;
+}
+.ta-left{
+    text-align: left;
+}
+.ta-right{
+    text-align: right;
+}
+.ta-start{
+    text-align: start;
+}
+.ta-end{
+    text-align: end;
+}
